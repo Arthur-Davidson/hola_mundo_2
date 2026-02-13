@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		FB546BEA2F3A364200A84056 /* prueba_hola_mundo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = prueba_hola_mundo.app; path = "/Users/alumno/Desktop/hola_mundo_2/prueba_hola_mundo/build/Debug-iphoneos/prueba_hola_mundo.app"; sourceTree = "<absolute>"; };
+		FBAE25972F3F6B2300420F0F /* prueba_hola_mundo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prueba_hola_mundo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,6 +33,7 @@
 			isa = PBXGroup;
 			children = (
 				FB546BEC2F3A364200A84056 /* prueba_hola_mundo */,
+				FBAE25972F3F6B2300420F0F /* prueba_hola_mundo.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +59,7 @@
 			packageProductDependencies = (
 			);
 			productName = prueba_hola_mundo;
-			productReference = FB546BEA2F3A364200A84056 /* prueba_hola_mundo.app */;
+			productReference = FBAE25972F3F6B2300420F0F /* prueba_hola_mundo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

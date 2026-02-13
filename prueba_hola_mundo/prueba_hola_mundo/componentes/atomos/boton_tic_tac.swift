@@ -20,6 +20,7 @@ struct BotonTicTac: View {
                 Text("-")
                     .padding(10)
                     .background(Color(.yellow))
+                    .multilineTextAlignment(.center)
                     .cornerRadius(8)
             }
             else if(opcion_mostrar == 1){

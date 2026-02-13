@@ -19,6 +19,7 @@ struct VistaJuegoGato: View {
                     .padding(20)
             }
             
+            
             Spacer()
             
             VStack{
