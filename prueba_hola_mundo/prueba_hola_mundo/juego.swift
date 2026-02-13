@@ -8,34 +8,49 @@
 import SwiftUI
 
 struct VistaJuegoGato: View {
+    @State var nombre_jugador = ""
+    
     var body: some View {
-        
-        Text("Juego del Gato")
-        
-        HStack {
-            BotonTicTac()
+        VStack{
+            Spacer()
             
-            BotonTicTac()
+            VStack{
+                TextField("Por favor introduce tu nombre", text: $nombre_jugador)
+                    .padding(20)
+            }
             
-            BotonTicTac()
+            Spacer()
+            
+            VStack{
+                Text("Juego del Gato")
+                
+                HStack {
+                    BotonTicTac()
+                    
+                    BotonTicTac()
+                    
+                    BotonTicTac()
+                }
+                
+                HStack {
+                    BotonTicTac()
+                    
+                    BotonTicTac()
+                    
+                    BotonTicTac()
+                }
+                
+                HStack {
+                    BotonTicTac()
+                    
+                    BotonTicTac()
+                    
+                    BotonTicTac()
+                }
+            }
+            
+            Spacer()
         }
-        
-        HStack {
-            BotonTicTac()
-            
-            BotonTicTac()
-            
-            BotonTicTac()
-        }
-
-        HStack {
-            BotonTicTac()
-            
-            BotonTicTac()
-            
-            BotonTicTac()
-        }
-
     }
 }
 
