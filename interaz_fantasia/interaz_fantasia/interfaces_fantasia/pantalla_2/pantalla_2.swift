@@ -12,12 +12,12 @@ struct SegundaPantalla: View {
         
         ZStack {
             
-            Color(.systemTeal)
-                .opacity(0.3)
+            Color("azul_incredible")
                 .ignoresSafeArea()
             
             VStack(spacing: 30) {
                 
+                // OPCION 1
                 HStack(spacing: 20) {
                     Image(systemName: "triangle.fill")
                         .font(.title2)
@@ -33,7 +33,7 @@ struct SegundaPantalla: View {
                 .cornerRadius(15)
                 .frame(width: 300)
                 
-                
+                // OPCION 2
                 HStack(spacing: 20) {
                     Image(systemName: "dollarsign")
                         .font(.title2)
@@ -49,7 +49,7 @@ struct SegundaPantalla: View {
                 .cornerRadius(15)
                 .frame(width: 300)
                 
-                
+                // OPCION 3
                 HStack(spacing: 20) {
                     Image(systemName: "cpu")
                         .font(.title2)
@@ -65,7 +65,7 @@ struct SegundaPantalla: View {
                 .cornerRadius(15)
                 .frame(width: 300)
                 
-                
+                // OPCION 4
                 HStack(spacing: 20) {
                     Image(systemName: "bolt.fill")
                         .font(.title2)

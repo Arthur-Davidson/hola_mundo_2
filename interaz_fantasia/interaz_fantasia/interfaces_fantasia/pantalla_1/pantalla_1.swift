@@ -13,8 +13,7 @@ struct PrimeraPantalla: View {
     var body: some View {
         ZStack {
             
-            Color(.systemTeal)
-                .opacity(0.3)
+            Color("azul_incredible")
                 .ignoresSafeArea()
             
             VStack(spacing: 20) {

@@ -4,68 +4,76 @@
 //
 
 import SwiftUI
-
+ 
 struct TerceraPantalla: View {
     var body: some View {
-        
         ZStack {
-            
-            Color(.systemTeal)
-                .opacity(0.3)
+            Color("azul_incredible")
                 .ignoresSafeArea()
-            
-            VStack(spacing: 30) {
-                
-                // Primer cuadro
-                Text("PROTOTYPE")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                
-                // Caja con texto centrado
-                HStack {
-                    Text("Imagen de heroe")
-                        .font(.title3)
+            VStack(spacing: 25) {
+                // SECCION 1 
+                VStack {
+                    HStack{
+                        Text("OPPONENT")
+                            .font(.headline)
+                            .fontWeight(.bold)
+                    Text("            ")
+                        Text("THREAT RATING: 7.9")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                    }
+                    // CUADRO
+                    ZStack {
+                        Text("Imagen de héroe")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                    }
+                    .frame(maxWidth: .infinity,
+                           maxHeight: .infinity)
+                    .background(.white.opacity(0.7))
+                    .cornerRadius(15)
+                    Text("GAMA JACK")
+                        .font(.subheadline)
                         .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
-                        .frame(maxWidth: .infinity)
+                        .foregroundColor(.white)
+                    Text("POWERS: CONTROLLED RADIATION BURST")
+                        .font(.subheadline)
+                        .foregroundColor(.white)
                 }
-                .padding()
-                .background(.white.opacity(0.7))
-                .cornerRadius(15)
-                .frame(width: 300)
-                
-                Text("GAMA JACK")
-                    .font(.subheadline)
-                    .fontWeight(.bold)
-                
-                // Segundo cuadro
-                Text("PROTOTYPE")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                
-                HStack {
-                    Text("Imagen de prototipo")
-                        .font(.title3)
+                .frame(maxHeight: .infinity)
+
+                //  SECCION 2
+                VStack {
+                    Text("PROTOTYPE")
+                        .font(.headline)
                         .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
-                        .frame(maxWidth: .infinity)
-                    Spacer()
+                    ZStack {
+                        Text("Imagen de prototipo")
+                            .font(.title3)
+                            .fontWeight(.bold)
+                    }
+                    .frame(maxWidth: .infinity,
+                           maxHeight: .infinity)
+                    .background(.white.opacity(0.7))
+                    .cornerRadius(15)
+                    Text("OMNIDROID V.X6")
+                        .font(.subheadline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                    Text("FEATURES: QUADRAL PEDAL LOCOMOTION,")
+                        .font(.subheadline)
+                        .foregroundColor(.white)
+                    Text("OMNIARTICULATED GRAPPLING-CLAWS")
+                        .font(.subheadline)
+                        .foregroundColor(.white)
                 }
-                .padding()
-                .background(.white.opacity(0.7))
-                .cornerRadius(15)
-                .frame(width: 300)
-                
-                Text("OMNIDROID V.X6")
-                    .font(.subheadline)
-                    .fontWeight(.bold)
-                
+                .frame(maxHeight: .infinity)
             }
             .padding()
         }
     }
 }
-
+ 
 #Preview {
     TerceraPantalla()
 }
