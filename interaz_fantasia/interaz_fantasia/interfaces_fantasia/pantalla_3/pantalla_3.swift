@@ -14,19 +14,19 @@ struct TerceraPantalla: View {
                 // SECCION 1 
                 VStack {
                     HStack{
-                        Text("OPPONENT")
+                        Text("OPONENTE")
                             .font(.headline)
                             .fontWeight(.bold)
                     Text("            ")
-                        Text("THREAT RATING: 7.9")
+                        Text("CALIFICACIÓN DE AMENAZA: 7.9")
                             .font(.headline)
                             .foregroundColor(.white)
+                            .bold()
                     }
                     // CUADRO
                     ZStack {
-                        Text("Imagen de héroe")
-                            .font(.title3)
-                            .fontWeight(.bold)
+                        Image("heroe")
+                            .resizable()
                     }
                     .frame(maxWidth: .infinity,
                            maxHeight: .infinity)
@@ -36,7 +36,7 @@ struct TerceraPantalla: View {
                         .font(.subheadline)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
-                    Text("POWERS: CONTROLLED RADIATION BURST")
+                    Text("PODERES: RADIACIÓN CONTROLADA")
                         .font(.subheadline)
                         .foregroundColor(.white)
                 }
@@ -44,13 +44,12 @@ struct TerceraPantalla: View {
 
                 //  SECCION 2
                 VStack {
-                    Text("PROTOTYPE")
+                    Text("PROTOTIPO")
                         .font(.headline)
                         .fontWeight(.bold)
                     ZStack {
-                        Text("Imagen de prototipo")
-                            .font(.title3)
-                            .fontWeight(.bold)
+                        Image("droide")
+                            .resizable()
                     }
                     .frame(maxWidth: .infinity,
                            maxHeight: .infinity)
@@ -60,10 +59,13 @@ struct TerceraPantalla: View {
                         .font(.subheadline)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
-                    Text("FEATURES: QUADRAL PEDAL LOCOMOTION,")
+                    Text("CARACTERÍSTICAS:")
                         .font(.subheadline)
                         .foregroundColor(.white)
-                    Text("OMNIARTICULATED GRAPPLING-CLAWS")
+                    Text("LOCOMOCIÓN CON PEDAL CUÁDRUPLE,")
+                        .font(.subheadline)
+                        .foregroundColor(.white)
+                    Text("GARRAS DE AGARRE OMNIARTICULADAS")
                         .font(.subheadline)
                         .foregroundColor(.white)
                 }

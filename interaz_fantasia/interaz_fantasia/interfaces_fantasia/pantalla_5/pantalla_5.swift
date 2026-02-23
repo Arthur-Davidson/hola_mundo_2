@@ -25,25 +25,25 @@ struct QuintaPantalla: View {
                 
                 // PESTAÑAS
                 HStack(spacing: 12) {
-                    Pestana(titulo: "TASKS", activa: true)
-                    Pestana(titulo: "MOTION", activa: false)
+                    Pestana(titulo: "TAREAS", activa: true)
+                    Pestana(titulo: "SISTEMA", activa: false)
                     Pestana(titulo: "AUDIO", activa: false)
-                    Pestana(titulo: "VENT", activa: false)
+                    Pestana(titulo: "DUCTOS", activa: false)
                 }
                 
                 Spacer()
                 // GRID
                 LazyVGrid(columns: columnas, spacing: 30) {
                     
-                    BotonPanel(texto: "ORDER CUPS")
-                    BotonPanel(texto: "ORDER NAPKINS")
-                    BotonPanel(texto: "ORDER PLATES")
-                    BotonPanel(texto: "ORDER UTENSILS")
+                    BotonPanel(texto: "ORDENAR VASOS")
+                    BotonPanel(texto: "ORDENAR SERVILLETAS")
+                    BotonPanel(texto: "ORDENAR PLATOS")
+                    BotonPanel(texto: "ORDENAR UTENSILIOS")
                     
-                    Text("Please wait...")
+                    Text("Espere por favor...")
                         .foregroundColor(.white)
                     
-                    BotonPanel(texto: "ORDER PIZZA KITS")
+                    BotonPanel(texto: "ORDENAR KITS DE PIZZA")
                 }
                 
                 Spacer()
@@ -62,7 +62,7 @@ struct QuintaPantalla: View {
                     .stroke(Color.white, lineWidth: 2)
                     .frame(width: 300, height: 50)
                     .overlay(
-                        Text("BACK")
+                        Text("REGRESAR")
                             .foregroundColor(.white)
                             .fontWeight(.bold)
                     )

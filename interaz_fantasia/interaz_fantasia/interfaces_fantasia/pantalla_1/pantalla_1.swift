@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PrimeraPantalla: View {
-    @State var texto_cambiante: String = "PASSWORD"
+    @State var texto_cambiante: String = "CONTRASEÑA"
     
     var body: some View {
         ZStack {

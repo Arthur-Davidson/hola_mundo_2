@@ -23,7 +23,7 @@ struct SegundaPantalla: View {
                         .font(.title2)
                         .frame(width: 40)
                     
-                    Text("ISLAND OPERATIONS")
+                    Text("OPERACIONES EN LA ISLA")
                         .font(.headline)
                     
                     Spacer()
@@ -39,7 +39,7 @@ struct SegundaPantalla: View {
                         .font(.title2)
                         .frame(width: 40)
                     
-                    Text("FINANCES")
+                    Text("FINANZAS")
                         .font(.headline)
                     
                     Spacer()
@@ -55,7 +55,7 @@ struct SegundaPantalla: View {
                         .font(.title2)
                         .frame(width: 40)
                     
-                    Text("OMNIDROID METATRAINING")
+                    Text("ENTRENAMIENTO OMNIDROIDE")
                         .font(.headline)
                     
                     Spacer()

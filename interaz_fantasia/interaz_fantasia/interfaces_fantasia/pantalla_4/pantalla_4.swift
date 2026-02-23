@@ -20,23 +20,23 @@ struct CuartaPantalla: View {
                 
                 // PESTANAS
                 HStack(spacing: 15) {
-                    Pestana(titulo: "TASKS", activa: true)
-                    Pestana(titulo: "SYSTEM", activa: false)
+                    Pestana(titulo: "TAREAS", activa: true)
+                    Pestana(titulo: "SISTEMA", activa: false)
                     Pestana(titulo: "AUDIO", activa: false)
-                    Pestana(titulo: "VENT", activa: false)
+                    Pestana(titulo: "DUCTOS", activa: false)
                 }
                 
                 Spacer()
                 
                 // LISTA
                 VStack(spacing: 30) {
-                    OpcionTarea(texto: "ORDER SUPPLIES", alerta: true)
+                    OpcionTarea(texto: "PEDIR SUMINISTROS", alerta: true)
                         .frame(width: 300)
-                    OpcionTarea(texto: "ADVERTISING", alerta: true)
+                    OpcionTarea(texto: "PUBLICIDAD", alerta: true)
                         .frame(width: 300)
-                    OpcionTarea(texto: "MAINTENANCE", alerta: true)
+                    OpcionTarea(texto: "MANTENIMIENTO", alerta: true)
                         .frame(width: 300)
-                    OpcionTarea(texto: "EQUIPMENT", alerta: false)
+                    OpcionTarea(texto: "EQUIPO", alerta: false)
                         .frame(width: 300)
                     Spacer()
                     
