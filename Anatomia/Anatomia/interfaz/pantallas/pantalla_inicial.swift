@@ -10,9 +10,18 @@ import SwiftUI
 struct PantallaInicial: View {
     
     var body: some View {
+        
         AgregarClicksBoton()
         
         DecrementarClicksBoton()
+        
+        VStack {
+            if AgregarClicksBoton()
+            {
+                Text("ECO PERICO")
+            }
+        }
+        .padding()
         
     }
 }

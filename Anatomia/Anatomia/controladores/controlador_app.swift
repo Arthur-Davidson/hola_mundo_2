@@ -25,6 +25,11 @@ class ControladorDeAplicacion {
         }
     }
     
+    func repetir_texto(cantidad: Int = 1) {
+        cantidad_clicks = cantidad
+    }
+
+    
     private func _decrementar_clicks() { // cada funcion con _ es privada
         
     }

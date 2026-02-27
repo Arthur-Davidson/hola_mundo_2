@@ -21,6 +21,7 @@ struct AgregarClicksBoton: View {
         .onTapGesture {
             controlador.aumentar_clicks()
         }
+        
     }
 }
 
